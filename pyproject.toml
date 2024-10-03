@@ -1,0 +1,23 @@
+[project]
+name = "jdi"
+description = "Jax tools for derivatives and integrators"
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+  "absl-py",
+  "numpy",
+  "jax",
+]
+
+dynamic = ["version"]
+
+
+[project.optional-dependencies]
+dev = [
+  "pylint>=2.6.0",
+  "yapf"
+]
+
+[tool.setuptools]
+packages = ["jdi"]
